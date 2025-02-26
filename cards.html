@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D Character Cards</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Card 1: Fighter -->
+    <div class="card" id="card-1">
+      <div class="content">
+        <div class="front" style="background-image: url('https://www.dndbeyond.com/avatars/thumbnails/43940/812/420/618/638607458265993956.png');">
+          <div class="inner">
+            <h2>Fighter</h2>
+            <label class="button" onclick="flipCard('card-1')">See Details</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="inner">
+            <div class="info">
+              <span>Strength</span>
+              <div class="icon">
+                <i class="fas fa-fist-raised"></i>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Dexterity</span>
+              <div class="icon">
+                <i class="fas fa-running"></i>
+                <span>14</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Intelligence</span>
+              <div class="icon">
+                <i class="fas fa-brain"></i>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>A master of martial combat, skilled with a variety of weapons and armor.</p>
+            </div>
+            <label class="button return" onclick="flipCard('card-1')">
+              <i class="fas fa-arrow-left"></i> Return
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Wizard -->
+    <div class="card" id="card-2">
+      <div class="content">
+        <div class="front" style="background-image: url('https://www.dndbeyond.com/avatars/thumbnails/43940/901/420/618/638607460388570205.png');">
+          <div class="inner">
+            <h2>Wizard</h2>
+            <label class="button" onclick="flipCard('card-2')">See Details</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="inner">
+            <div class="info">
+              <span>Intelligence</span>
+              <div class="icon">
+                <i class="fas fa-brain"></i>
+                <span>20</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Wisdom</span>
+              <div class="icon">
+                <i class="fas fa-eye"></i>
+                <span>16</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Strength</span>
+              <div class="icon">
+                <i class="fas fa-fist-raised"></i>
+                <span>8</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>A scholarly magic-user capable of manipulating the structures of reality.</p>
+            </div>
+            <label class="button return" onclick="flipCard('card-2')">
+              <i class="fas fa-arrow-left"></i> Return
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Sorcerer -->
+    <div class="card" id="card-3">
+      <div class="content">
+        <div class="front" style="background-image: url('https://www.dndbeyond.com/avatars/thumbnails/43940/869/420/618/638607459717652437.png');">
+          <div class="inner">
+            <h2>Sorcerer</h2>
+            <label class="button" onclick="flipCard('card-3')">See Details</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="inner">
+            <div class="info">
+              <span>Charisma</span>
+              <div class="icon">
+                <i class="fas fa-smile"></i>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Constitution</span>
+              <div class="icon">
+                <i class="fas fa-heart"></i>
+                <span>14</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Dexterity</span>
+              <div class="icon">
+                <i class="fas fa-running"></i>
+                <span>12</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>A spellcaster who harnesses magical power from within, often born with innate magical abilities.</p>
+            </div>
+            <label class="button return" onclick="flipCard('card-3')">
+              <i class="fas fa-arrow-left"></i> Return
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Druid -->
+    <div class="card" id="card-4">
+      <div class="content">
+        <div class="front" style="background-image: url('https://www.dndbeyond.com/avatars/thumbnails/43940/797/420/618/638607457905913506.png');">
+          <div class="inner">
+            <h2>Druid</h2>
+            <label class="button" onclick="flipCard('card-4')">See Details</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="inner">
+            <div class="info">
+              <span>Wisdom</span>
+              <div class="icon">
+                <i class="fas fa-eye"></i>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Constitution</span>
+              <div class="icon">
+                <i class="fas fa-heart"></i>
+                <span>14</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Intelligence</span>
+              <div class="icon">
+                <i class="fas fa-brain"></i>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>A nature-based spellcaster with the ability to shape-shift into animals and harness the power of the earth.</p>
+            </div>
+            <label class="button return" onclick="flipCard('card-4')">
+              <i class="fas fa-arrow-left"></i> Return
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Paladin -->
+    <div class="card" id="card-5">
+      <div class="content">
+        <div class="front" style="background-image: url('https://www.dndbeyond.com/avatars/thumbnails/43940/831/420/618/638607458603093196.png');">
+          <div class="inner">
+            <h2>Paladin</h2>
+            <label class="button" onclick="flipCard('card-5')">See Details</label>
+          </div>
+        </div>
+        <div class="back">
+          <div class="inner">
+            <div class="info">
+              <span>Charisma</span>
+              <div class="icon">
+                <i class="fas fa-smile"></i>
+                <span>16</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Strength</span>
+              <div class="icon">
+                <i class="fas fa-fist-raised"></i>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="info">
+              <span>Wisdom</span>
+              <div class="icon">
+                <i class="fas fa-eye"></i>
+                <span>14</span>
+              </div>
+            </div>
+            <div class="description">
+              <p>A holy warrior who fights for justice and righteousness, often serving a divine power.</p>
+            </div>
+            <label class="button return" onclick="flipCard('card-5')">
+              <i class="fas fa-arrow-left"></i> Return
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function flipCard(cardId) {
+      const card = document.getElementById(cardId);
+      card.classList.toggle('flipped');
+    }
+  </script>
+</body>
+</html>
